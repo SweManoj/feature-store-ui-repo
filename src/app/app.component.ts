@@ -34,12 +34,18 @@ export class AppComponent implements OnInit {
       version: 1
     }
   ]
+
   constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
   }
 
+  inputType="password";
+  onEyeClick()
+  {
+    this.inputType=this.inputType=="password"?"text":"password";
+  }
   addData() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;

@@ -94,3 +94,29 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter Email Address" id="Guru">
+        <label class="input-group-text" for="Guru">@example.com</label>
+      </div>
+    </div>
+
+    <div class="offset-4 col-4">
+      <div class="input-group mb-3">
+        <input [type]="inputType" class="form-control" placeholder="Enter Password">
+        <span class="input-group-text">
+          <fa-icon *ngIf="inputType=='text'" [icon]="['fas','eye']" (click)="onEyeClick()"> </fa-icon>
+          <fa-icon *ngIf="inputType=='password'" [icon]="['fas','eye-slash']" (click)="onEyeClick()"> </fa-icon>
+        </span>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter Email Address" id="Guru">
+        <label class="input-group-text" for="Guru">@example.com</label>
+      </div>
+    </div>
+  </div>
+</div>

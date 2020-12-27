@@ -17,10 +17,12 @@ import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 import { AddFeatureComponent } from './add-feature/add-feature.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FirstComponent } from './first/first.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AddFeatureComponent
+    AddFeatureComponent,
+    FirstComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [FirstComponent]
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
