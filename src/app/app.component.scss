@@ -1,0 +1,42 @@
+.featureStore {
+    font-size: small;
+    .successBg {
+        background: #099809bd;
+        color: white;
+    }
+    .refreshButton {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: larger;
+        cursor: pointer;
+    }
+
+    .featureGroup {
+        padding: 0.5rem 1rem;
+    }
+    th {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    td {
+        word-break: break-all !important;
+        // font-size: small;
+    }
+
+    table {
+        width: 100%;
+    }
+    .mat-raised-button {
+        line-height: 28px;
+        padding: 0 10px;
+    }
+}
+
+/* .p-datatable .p-paginator-bottom {
+    border-width: inherit !important;
+    border-radius: 0 !important;
+    float: right !important;
+} */

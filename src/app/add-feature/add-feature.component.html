@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Add Feature</h1>
+<div mat-dialog-content>
+    <form [formGroup]="addDataForm" [style.fontSize.px]="12">
+        <div>
+            <mat-form-field appearance="outline" class="mr-3">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter Name" formControlName="name" autocomplete="off" />
+                <mat-hint *ngIf="name.touched && name.invalid" class="text-danger font-weight-bold">
+                    Name Required</mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="mr-3">
+                <mat-label>Description</mat-label>
+                <input matInput placeholder="Enter Description" formControlName="desc" autocomplete="off" />
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button class="closeButton" mat-dialog-close>Close</button>
+    <button mat-raised-button class="submitButton" (click)="submit()" [disabled]="addDataForm.invalid">Submit</button>
+</div>
